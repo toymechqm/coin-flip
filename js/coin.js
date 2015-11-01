@@ -18,8 +18,8 @@ $( document ).ready(function() {
       $img.css({ '-transition': speed+'s'});
       $img.css({ '-transform-style': 'preserve-3d'});
       }
-      $('#flip').click(function(){
 
+      $('#flip').click(function(){
           $speed = 0.05;
           for($i=0;$i<=1440;$i++)
           {
@@ -32,17 +32,23 @@ $( document ).ready(function() {
           setTimeout(function(){
               $('#myimg').removeAttr('style');
           },3000);
+          var toss = Math.random();
 
+          if (toss >= 0.5) {
+            $( ".results" ).empty().append($("#h21").text());
+          } else{
+            $( ".results" ).empty().append($("#h22").text());
+          }
       });
   });
 
-$( "#add1" ).click(function() {
-  $( "#h21" ).empty().append($("#opt1").val());
+  $( "#add1" ).click(function() {
+    $( "#h21" ).empty().append($("#opt1").val());
 
-});
+  });
 
-$( "#add2" ).click(function() {
-  $( "#h22" ).empty().append($("#opt2").val());
-});
+  $( "#add2" ).click(function() {
+    $( "#h22" ).empty().append($("#opt2").val());
+  });
 
 });

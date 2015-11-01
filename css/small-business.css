@@ -1,3 +1,37 @@
+body {
+    padding-top: 10px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.navbar-fixed-top .nav {
+    padding: 10px 0;
+    margin:10px;
+}
+
+.navbar-brand>img {
+    height: 10px;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+@media(min-width:768px) {
+    body {
+        padding-top: 10px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}
+
+nav {
+    margin: 15px;
+
+}
+
+
+
 .bubble
 {
 position: relative;
